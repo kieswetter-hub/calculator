@@ -1,3 +1,4 @@
+/* simple calculator */
 
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
@@ -48,18 +49,8 @@ class Calculator {
         computation = prev * current
         break
       case '÷': 
-        if (current === 0) {
-          
-            computation = 'no dividing by 0'
-
-            const allButtons = document.querySelectorAll('button');
-
-            allButtons.forEach(button => {
-              button.addEventListener('click', () => {
-                calculator.clear()
-                calculator.updateDisplay()
-              }, {once: true});
-            }) 
+        if (current === 0) { 
+            computation = 'no dividing by zero'
 
         } else { 
             computation = prev / current
@@ -93,8 +84,9 @@ const clearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous]');
 const currentOperandTextElement = document.querySelector('[data-current]');
 
-
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+/* event listeners */
 
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -124,3 +116,4 @@ deleteButton.addEventListener('click', button => {
   calculator.delete()
   calculator.updateDisplay()
 })
+
