@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Vinyl&display=swap');
+
+:root {
+  --bgGreen: #8ee4af;
+  --bg: #4056a1;
+  --accent: #EDF5E1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg);
+  font-family: 'roboto', sans-serif;
+}
+
+/* button styling */
+
+.buttons-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  padding: 1vh 0vh 1vh 0vh;
+  margin: 0;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.70); 
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* screen */
+
+.screen {
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.screen .previous {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+
+.screen .previous {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+
+.screen .current {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5rem;
+}
+
+
+
+
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  justify-content: center;
+  background-color: rgb(177, 177, 177);
+  padding: 2vh 1vh 2vh 1vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.screen {
+  display: flex;
+  background-color: grey;
+  justify-content: right;
+  border: 1px solid black;
+  margin-bottom: 1vh;
+  height: 80px;
+} */
+/* 
+p {
+  font-size: 2vh;
+  font-weight: bold;
+  margin-right: 1vh;
+
+} */
+/* 
+.screen, .buttons-grid {
+  border: 1px solid black;
+  width: 35vh;
+  border-radius: 5px;
+} */
